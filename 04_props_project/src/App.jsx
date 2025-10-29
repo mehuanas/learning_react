@@ -107,7 +107,7 @@ const jobOpenings = [
     <div className="parent">
       {jobOpenings.map((e, index) => {
         return <div key={index}>
-          <Card dets={e} />
+          <Card props={e} />
         </div>
       })}
     </div>

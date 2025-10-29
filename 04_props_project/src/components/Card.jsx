@@ -1,31 +1,33 @@
-const Card = (props) => {
-  let prop = props.dets;
+const Card = ({props}) => {
+
+  console.log(props);
+  
   
   return (
     <div>
       <div className="card">
         <div>
           <div className="top">
-            <img src={prop.brandLogo} alt="Logo" />
+            <img src={props.brandLogo} alt="Logo" />
             <button>Save</button>
           </div>
 
           <div className="center">
             <h3>
-              {prop.companyName} <span>{prop.datePosted}</span>
+              {props.companyName} <span>{props.datePosted}</span>
             </h3>
-            <h2>{prop.post}</h2>
+            <h2>{props.post}</h2>
             <div className="tag">
-              <h4>{prop.tag1}</h4>
-              <h4>{prop.tag2}</h4>
+              <h4>{props.tag1}</h4>
+              <h4>{props.tag2}</h4>
             </div>
           </div>
         </div>
 
         <div className="bottom">
           <div>
-            <h3>${prop.pay}/hr</h3>
-            <p>{prop.location}</p>
+            <h3>${props.pay}/hr</h3>
+            <p>{props.location}</p>
           </div>
           <button>Apply Now</button>
         </div>
