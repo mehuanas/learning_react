@@ -1,11 +1,11 @@
 import Navbar from "./Navbar";
 import Page1Content from "./Page1Content";
 
-const Section1 = () => {
+const Section1 = ({ users }) => {
   return (
     <div className="h-screen w-full">
       <Navbar />
-      <Page1Content />
+      <Page1Content users={users} />
     </div>
   );
 };
